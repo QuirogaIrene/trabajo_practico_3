@@ -1,23 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
-↩
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Formulario</title>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="../static/css/estilos.css">
 </head>
+<body>
 <header>
-	<h1>Fomulario Cliente</h1>
+	<h1><img src="../static/images/usuario.gif" alt="Icono usario">Irene's Store</h1>
+	<nav class="menunav">
+		<a href="#" rel="noopener" title="Inicio" class="enlaces">Inicio</a>
+		<a href="#" rel="noopener" title="Carrito" class="enlaces"><img src="../static/images/carrito-de-compras.gif"
+				alt="Carrito"></a>
+		<a href="#" rel="noopener" title="Productos" class="enlaces">Productos</a>
+		<a href="#" rel="noopener" title="Contactanos" class="enlaces">Contactanos</a>
+		<a href="#" rel="noopener" title="Ayuda" class="enlaces">Ayuda</a>
+	</nav>
 </header>
 
-<main>
-	</main>	
+<main class="principal">
+	<h2 class="subtitulos">FORMULARIO CLIENTE</h2>
+	<form>
+			<legend>Información Personal</legend>
+			<section>
+				<label for="nombre">Nombres:</label>
+				<input type="text" id="nombre" name="nombre" required>
 
-	<footer>
-	    <p>&copy; 2024 Tienda Irene's - Todos los derechos reservados</p>
-	    <a href="https://www.facebook.com/TiendaIrenes" target="_blank">Facebook</a>
-	    <a href="https://www.instagram.com/TiendaIrenes" target="_blank">Instagram</a>
-	    <a href="https://www.twitter.com/TiendaIrenes" target="_blank">Twitter</a>
-	</footer>
+				<label for="apellido">Apellidos:</label>
+				<input type="text" id="apellido" name="apellido" required>
+
+				<label for="dni">DNI:</label>
+				<input type="number" id="dni" name="dni" required>
+
+				<label for="fecha">Fecha de Nacimiento:</label>
+				<input type="date" id="fecha" name="fecha">
+
+				<legend>Género:</legend>
+				<label for="masculino">
+					<input type="radio" id="masculino" name="genero">
+					Masculino
+				</label>
+				<label for="femen">
+					<input type="radio" id="femen" name="genero">
+					Femenino
+				</label>
+				<label for="otro">
+					<input type="radio" id="otro" name="genero">
+					Otro
+				</label>
+
+				<label for="email">Correo Electrónico:</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="direccion">Domicilio:</label>
+				<input type="text" id="direccion" name="direccion" required>
+
+				<label for="provincia">Provincia:</label>
+				<select id="provincia" name="provincia" required>
+					<option value="Jujuy">Jujuy</option>
+					<option value="Córdoba">Córdoba</option>
+					<option value="Salta">Santa Fe</option>
+					<option value="Formosa">Mendoza</option>
+					<option value="Tucumán">Tucumán</option>
+				</select>
+
+				<label for="celular">Número de Teléfono Celular:</label>
+				<input type="tel" id="celular" name="celular">
+			</section>
+			<section>
+
+				<legend>Categorías de Interés:</legend>
+				<label for="tecno">
+					<input type="checkbox" id="tecno" name="intereses">
+					Tecnología
+				</label>
+				<label for="deporte">
+					<input type="checkbox" id="deporte" name="intereses">
+					Deportes
+				</label>
+				<label for="musica">
+					<input type="checkbox" id="musica" name="intereses">
+					Música
+				</label>
+				<label for="viaje">
+					<input type="checkbox" id="viaje" name="intereses">
+					Viajes
+				</label>
+				<label for="comida">
+					<input type="checkbox" id="comida" name="intereses">
+					Comida
+				</label>
+
+				<label for="bio">Sugerencias para la empresa:</label><br>
+				<textarea id="bio" name="bio" rows="4" cols="50"></textarea>
+
+				<label for="contraseña">Contraseña:</label>
+				<input type="password" id="contraseña" name="contraseña" required>
+			</section>
+
+			<label for="terminos">
+				<input type="checkbox" id="terminos" name="terminos" required>
+				Acepto los términos y condiciones.
+			</label>
+
+			<label for="info">
+				<input type="checkbox" id="info" name="info">
+				Acepto recibir información relativa a la empresa.
+			</label>
+
+			<button type="reset">Atras</button>
+			<button type="submit">Enviar</button>
+
+	</form>
+	<br>
+</main>
+<footer id="piedp">
+        <p class="derechos">P.Visual © 2024 Irene's Store. Todos los derechos reservados.</p>
+        <nav class="menupdp">
+            <ul>
+                <li><a href="#" class="footer-links">Instagram</a></li>
+                <li><a href="#" class="footer-links">Facebook</a></li>
+                <li><a href="#" class="footer-links">Contacto</a></li>
+            </ul>
+        </nav>
+</footer>
+</body>
 </html>
